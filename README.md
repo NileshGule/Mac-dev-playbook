@@ -1,17 +1,10 @@
 # Mac Development Ansible Playbook
 
-[![Build Status](https://travis-ci.org/geerlingguy/mac-dev-playbook.svg?branch=master)](https://travis-ci.org/geerlingguy/mac-dev-playbook)
+This work is inspired by [geerlingguy] (https://github.com/geerlingguy/mac-dev-playbook) work on automating the setup for Mac Book. For installing the oh my zsh package I took inspiration from [Raymiiorg] (https://github.com/RaymiiOrg/ansible/blob/master/oh-my-zsh/ohmyzsh.yml)
 
-This playbook installs and configures most of the software I use on my Mac for web and software development. Some things in macOS are slightly difficult to automate, so I still have some manual installation steps, but at least it's all documented here.
+This playbook installs and configures most of the software I use on my Mac for software development. I combined the two ansible automated setups and added my own tools like Github Desktop & Tabset. The complete list of softwares are listed below.
 
 This is a work in progress, and is mostly a means for me to document my current Mac's setup. I'll be evolving this set of playbooks over time.
-
-*See also*:
-
-  - [Boxen](https://github.com/boxen)
-  - [Battleschool](http://spencer.gibb.us/blog/2014/02/03/introducing-battleschool)
-  - [osxc](https://github.com/osxc)
-  - [MWGriffin/ansible-playbooks](https://github.com/MWGriffin/ansible-playbooks) (the original inspiration for this project)
 
 ## Installation
 
@@ -66,22 +59,15 @@ Any variable can be overridden in `config.yml`; see the supporting roles' docume
 ## Included Applications / Configuration (Default)
 
 Applications (installed with Homebrew Cask):
-
+  - [Atom] (https://atom.io)
   - [Docker](https://www.docker.com/)
   - [Dropbox](https://www.dropbox.com/)
   - [Firefox](https://www.mozilla.org/en-US/firefox/new/)
+  - [Github Desktop] (https://desktop.github.com)
   - [Google Chrome](https://www.google.com/chrome/)
-  - [Handbrake](https://handbrake.fr/)
   - [Homebrew](http://brew.sh/)
-  - [LICEcap](http://www.cockos.com/licecap/)
-  - [LimeChat](http://limechat.net/mac/)
-  - [MacVim](http://macvim-dev.github.io/macvim/)
-  - [nvALT](http://brettterpstra.com/projects/nvalt/)
-  - [Sequel Pro](https://www.sequelpro.com/) (MySQL client)
-  - [Skitch](https://evernote.com/skitch/)
-  - [Slack](https://slack.com/)
+  - [iTerm2] (https://www.iterm2.com)
   - [Sublime Text](https://www.sublimetext.com/)
-  - [Transmit](https://panic.com/transmit/) (S/FTP client)
   - [Vagrant](https://www.vagrantup.com/)
   - [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 
@@ -90,28 +76,12 @@ Packages (installed with Homebrew):
   - autoconf
   - bash-completion
   - chromedriver
-  - doxygen
-  - gettext
-  - gifsicle
   - git
-  - go
   - gpg
-  - hub
-  - httpie
-  - iperf
-  - libevent
-  - sqlite
-  - mcrypt
-  - nmap
   - node
   - nvm
-  - ssh-copy-id
-  - cowsay
-  - readline
-  - openssl
-  - pv
-  - wget
-  - wrk
+  - tree
+  - zsh
 
 My [dotfiles](https://github.com/geerlingguy/dotfiles) are also installed into the current user's home directory, including the `.osx` dotfile for configuring many aspects of macOS for better performance and ease of use. You can disable dotfiles management by setting `configure_dotfiles: no` in your configuration.
 

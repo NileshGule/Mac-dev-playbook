@@ -26,30 +26,11 @@ homebrew_installed_packages:
   - autoconf
   - bash-completion
   - chromedriver
-  # - doxygen
-  # - gettext
-  # - gifsicle
   - git
-  # - git-core
-  # - go
   - gpg
-  # - hub
-  # - httpie
-  # - iperf
-  # - libevent
-  # - sqlite
-  # - mcrypt
-  # - nmap
   - node
   - nvm
-  # - ssh-copy-id
   - tree
-  # - cowsay
-  # - readline
-  # - openssl
-  # - pv
-  # - wget
-  # - wrk
   - zsh
 
 homebrew_taps:
@@ -66,17 +47,8 @@ homebrew_cask_apps:
   - firefox
   - google-chrome
   - github-desktop
-  # - handbrake
   - iterm2
-  # - licecap
-  # - limechat
-  # - macvim
-  # - nvalt
-  # - sequel-pro
-  # - skitch
-  # - slack
   - sublime-text
-  # - transmit
   - vagrant
   - virtualbox
 
@@ -98,7 +70,7 @@ gem_packages: []
   # - name: bundler
   #   state: present # present/absent/latest, default: present
   #   version: "~> 1.15.1" # default: N/A
-npm_packages: 
+npm_packages:
   - iterm2-tab-set
   # - name: webpack
   #   state: present # present/absent/latest, default: present
