@@ -86,6 +86,14 @@ Packages (installed with Homebrew):
   - tree
   - zsh
 
+Atom packages and Themes (installed with hnakamu role)
+
+  - change-tabs
+  - color-tabs
+  - [file-icons](https://atom.io/packages/file-icons)
+  - [atom-material-ui](https://github.com/atom-material/atom-material-ui)
+  - [atom-material-syntax-dark](https://github.com/atom-material/atom-material-syntax-dark)
+
 As per the original playbook from geerlingguy, there is an option to configure the dotfiles. I have disabled this option by setting the configure_dotfiles: no flag.
 
 Ansible role [hnakamu](https://github.com/hnakamur/ansible-role-atom-packages) is used for managing Atom packages.
@@ -96,7 +104,7 @@ I faced problems while setting zsh as the default shell. I have commented the li
 Finally, there are a few other preferences and settings added on for various apps and services.
 
 ## Future additions
-I use Atom & Sublime 3 as preferred text editors. Both these editors support Material Theme. I would like to automate the installation of theme as well s the icons package. For now these are manually installed and configured.
+I use Atom & Sublime 3 as preferred text editors. Both these editors support Material Theme. I would like to automate the installation of theme as well s the icons package. For now these are manually installed and configured for Sublime.
 
 Next step is to automate the installation of plugins for Sublime.
 

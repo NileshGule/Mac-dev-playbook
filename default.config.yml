@@ -56,6 +56,8 @@ atom_packages_packages:
   - change-tabs
   - color-tabs
   - file-icons
+  - atom-material-ui
+  - atom-material-syntax-dark
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: []
