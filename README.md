@@ -94,6 +94,7 @@ Finally, there are a few other preferences and settings added on for various app
 
 ## Future additions
 I use Atom & Sublime 3 as preferred text editors. Both these editors support Material Theme. I would like to automate the installation of theme as well s the icons package. For now these are manually installed and configured.
+Next step would be to use the Ansible role for managin Atom packages instead of using the shell commands.
 
 ### Things that still need to be done manually
 
