@@ -1,6 +1,11 @@
 ---
 downloads: ~/.ansible-downloads/
 
+general:
+    local_home: "{{ lookup('env','HOME') }}"
+    user_name: "{{ lookup('env', 'USER') }}"
+
+
 configure_dotfiles: no
 configure_sudoers: yes
 configure_terminal: yes
