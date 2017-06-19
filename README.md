@@ -1,8 +1,11 @@
 # Mac Development Ansible Playbook
 
-This work is inspired by [geerlingguy] (https://github.com/geerlingguy/mac-dev-playbook) work on automating the setup for Mac Book. For installing the oh my zsh package I took inspiration from [Raymiiorg] (https://github.com/RaymiiOrg/ansible/blob/master/oh-my-zsh/ohmyzsh.yml)
+This work is inspired by [geerlingguy](https://github.com/geerlingguy/mac-dev-playbook) work on automating the setup for Mac Book. For installing the [oh my zsh](http://ohmyz.sh) package I took inspiration from [RaymiiOrg](https://github.com/RaymiiOrg/ansible/blob/master/oh-my-zsh/ohmyzsh.yml).
 
 This playbook installs and configures most of the software I use on my Mac for software development. I combined the two ansible automated setups and added my own tools like Github Desktop & Tabset. The complete list of softwares are listed below.
+
+I have also automated the installation of Atom packages. This is inspired from the playbook of [Fusion](https://gist.github.com/Fusion/c45fdd8857c84440d55f)
+The details related to Atom packages can be found in atom-packages-setup.yml file.
 
 This is a work in progress, and is mostly a means for me to document my current Mac's setup. I'll be evolving this set of playbooks over time.
 
@@ -106,7 +109,7 @@ It's my hope that I can get the rest of these things wrapped up into Ansible pla
 
 ### Applications/packages to be added:
 
-In future would like to automate the additional packages for Atom & Sublime editors to be automated.
+In future would like to automate the additional packages for Sublime editors to be automated.
 
 ### Configuration to be added:
 
