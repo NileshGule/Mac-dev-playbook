@@ -1,0 +1,23 @@
+---
+- name: Clone oh-my-zsh repo
+  #git: repo=https://github.com/robbyrussell/oh-my-zsh.git dest=/home/$user/.oh-my-zsh
+  git: repo=https://github.com/robbyrussell/oh-my-zsh.git dest=/Users/nileshgule/.oh-my-zsh
+
+- name: deploy .zshrc
+  #template: src=files/zshrc.in dest=/home/$user/conf/zshrc owner=$user
+  template: src=files/zshrc.in dest=/Users/nileshgule/conf/zshrc owner=nileshgule
+
+- name: remove standard zshrc
+  #file: path=/home/$user/.zshrc state=absent
+  file: path=/Users/nileshgule/.zshrc state=absent
+
+- name: Create conf folder in home directory
+  #file: path=/home/$user/conf/ state=directory owner=$user
+  file: path=/Users/nileshgule/conf/ state=directory owner=nileshgule
+
+- name: symlink zshrc
+  #file: path=/home/$user/.zshrc src=/home/$user/conf/zshrc state=link owner=$user
+  file: path=/Users/nileshgule/.zshrc src=/Users/nileshgule/conf/zshrc state=link owner=nileshgule
+
+#- name: Set zsh as default shell
+#  user: name=nileshgule shell=/bin/zsh
