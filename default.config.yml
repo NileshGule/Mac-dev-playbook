@@ -26,6 +26,7 @@ homebrew_installed_packages:
   - autoconf
   - bash-completion
   - chromedriver
+  - docker-compose
   - git
   - gpg
   - node
