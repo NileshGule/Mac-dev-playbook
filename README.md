@@ -59,14 +59,14 @@ Any variable can be overridden in `config.yml`; see the supporting roles' docume
 ## Included Applications / Configuration (Default)
 
 Applications (installed with Homebrew Cask):
-  - [Atom] (https://atom.io)
+  - [Atom](https://atom.io)
   - [Docker](https://www.docker.com/)
   - [Dropbox](https://www.dropbox.com/)
   - [Firefox](https://www.mozilla.org/en-US/firefox/new/)
-  - [Github Desktop] (https://desktop.github.com)
+  - [Github Desktop](https://desktop.github.com)
   - [Google Chrome](https://www.google.com/chrome/)
   - [Homebrew](http://brew.sh/)
-  - [iTerm2] (https://www.iterm2.com)
+  - [iTerm2](https://www.iterm2.com)
   - [Sublime Text](https://www.sublimetext.com/)
   - [Vagrant](https://www.vagrantup.com/)
   - [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
@@ -83,11 +83,14 @@ Packages (installed with Homebrew):
   - tree
   - zsh
 
-My [dotfiles](https://github.com/geerlingguy/dotfiles) are also installed into the current user's home directory, including the `.osx` dotfile for configuring many aspects of macOS for better performance and ease of use. You can disable dotfiles management by setting `configure_dotfiles: no` in your configuration.
+As per the original playbook from geerlingguy, there is an option to configure the dotfiles. I have disabled this option by setting the configure_dotfiles: no flag.
+
+I faced problems while setting zsh as the default shell. I have commented the lines in oh-my-zsh-setup.yml file which tries to set the default shell. The original oh-my-zsh setup file had user name passed as a variable. i changed this a bit to use the current user from environment variables.
 
 Finally, there are a few other preferences and settings added on for various apps and services.
 
 ## Future additions
+I use Atom & Sublime 3 as preferred text editors. Both these editors support Material Theme. I would like to automate the installation of theme as well s the icons package. For now these are manually installed and configured.
 
 ### Things that still need to be done manually
 
@@ -103,33 +106,15 @@ It's my hope that I can get the rest of these things wrapped up into Ansible pla
 
 ### Applications/packages to be added:
 
-These are mostly direct download links, some are more difficult to install because of custom installers or other nonstandard install quirks:
-
-  - [iShowU HD](http://www.shinywhitebox.com/downloads/iShowU_HD_2.3.20.dmg)
-  - [Adobe Creative Cloud](http://www.adobe.com/creativecloud.html)
+In future would like to automate the additional packages for Atom & Sublime editors to be automated.
 
 ### Configuration to be added:
 
-  - I have vim configuration in the repo, but I still need to add the actual installation:
+  - In order for iTerm2 terminal to pick oh my zsh as the default shell the command needs to be customized:
     ```
-    mkdir -p ~/.vim/autoload
-    mkdir -p ~/.vim/bundle
-    cd ~/.vim/autoload
-    curl https://raw.githubusercontent.com/tpope/vim-pathogen/master/autoload/pathogen.vim > pathogen.vim
-    cd ~/.vim/bundle
-    git clone git://github.com/scrooloose/nerdtree.git
+    In the preferences for iTerm2 select the startup command as /bin/zsh --login
     ```
-
-## Testing the Playbook
-
-Many people have asked me if I often wipe my entire workstation and start from scratch just to test changes to the playbook. Nope! Instead, I posted instructions for how I build a [Mac OS X VirtualBox VM](https://github.com/geerlingguy/mac-osx-virtualbox-vm), on which I can continually run and re-run this playbook to test changes and make sure things work correctly.
-
-Additionally, this project is [continuously tested on Travis CI's macOS infrastructure](https://travis-ci.org/geerlingguy/mac-dev-playbook).
-
-## Ansible for DevOps
-
-Check out [Ansible for DevOps](https://www.ansiblefordevops.com/), which teaches you how to automate almost anything with Ansible.
 
 ## Author
 
-[Jeff Geerling](http://www.jeffgeerling.com/), 2014 (originally inspired by [MWGriffin/ansible-playbooks](https://github.com/MWGriffin/ansible-playbooks)).
+[Nilesh Gule](http://nileshgule.blogspot.com/), 2017 (originally inspired by [geerlingguy] (https://github.com/geerlingguy/mac-dev-playbook) and [Raymiiorg] (https://github.com/RaymiiOrg/ansible/blob/master/oh-my-zsh/ohmyzsh.yml)).
