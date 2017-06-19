@@ -52,7 +52,7 @@ homebrew_cask_apps:
   - vagrant
   - virtualbox
 
-atom_packages:
+atom_packages_packages:
   - change-tabs
   - color-tabs
   - file-icons

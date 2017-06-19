@@ -20,15 +20,12 @@
     - role: geerlingguy.mas
       when: mas_installed_apps
       tags: ['mas']
+    - role: hnakamur.atom-packages
 
   tasks:
     - include: tasks/ansible-setup.yml
 
     - include: tasks/oh-my-zsh-setup.yml
-
-    - name: Installing missing Atom packages
-      include: tasks/atom-packages-setup.yml
-      with_items: "{{ atom_packages }}"
 
     - include: tasks/sudoers.yml
       when: configure_sudoers

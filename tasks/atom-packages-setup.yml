@@ -1,9 +1,12 @@
 ---
-- set_fact: pkgname="{{item}}"
+#- set_fact: pkgname="{{item}}"
 
-- name: Check whether package '{{item}}' already installed
-  shell: "apm list -ip | grep '{{item}}@' | wc -l"
-  register: installed
-- name: Install '{{item}}' if necessary
-  shell: "apm install {{item}}"
-  when: installed.stdout=="0"
+#- name: Check whether package '{{item}}' already installed
+#  shell: "apm list -ip | grep '{{item}}@' | wc -l"
+#  register: installed
+#- name: Install '{{item}}' if necessary
+#  shell: "apm install {{item}}"
+#  when: installed.stdout=="0"
+
+description: Install '{{item}}' atom package (if necessary)
+- apm: name='{{item}}' state=present
