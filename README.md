@@ -104,7 +104,7 @@ I faced problems while setting zsh as the default shell. I have commented the li
 Finally, there are a few other preferences and settings added on for various apps and services.
 
 ## Future additions
-I use Atom & Sublime 3 as preferred text editors. Both these editors support Material Theme. I would like to automate the installation of theme as well s the icons package. For now these are manually installed and configured for Sublime.
+I use Atom & Sublime 3 as preferred text editors. Both these editors support Material Theme. I would like to automate the installation of theme as well as the icons package. For now these are manually installed and configured for Sublime.
 
 Next step is to automate the installation of plugins for Sublime.
 

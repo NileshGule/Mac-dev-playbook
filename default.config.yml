@@ -79,6 +79,7 @@ gem_packages: []
   #   version: "~> 1.15.1" # default: N/A
 npm_packages:
   - iterm2-tab-set
+  - material-theme
   # - name: webpack
   #   state: present # present/absent/latest, default: present
   #   version: "^2.6" # default: N/A
