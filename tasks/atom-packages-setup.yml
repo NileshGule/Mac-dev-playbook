@@ -9,4 +9,4 @@
 #  when: installed.stdout=="0"
 
 description: Install '{{item}}' atom package (if necessary)
-- apm: name='{{item}}' state=present
+- apm: "name='{{item}}' state=present"

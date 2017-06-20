@@ -21,6 +21,7 @@ dotfiles_files:
   - .osx
   - .vimrc
 
+homebrew_upgrade_all_packages: yes
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
   - autoconf
@@ -37,7 +38,7 @@ homebrew_installed_packages:
 homebrew_taps:
   - homebrew/core
   - caskroom/cask
-  - homebrew/php
+  #- homebrew/php
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
@@ -54,8 +55,6 @@ homebrew_cask_apps:
   - virtualbox
 
 atom_packages_packages:
-  - change-tabs
-  - color-tabs
   - file-icons
   - atom-material-ui
   - atom-material-syntax-dark
