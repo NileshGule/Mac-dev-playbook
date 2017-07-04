@@ -93,6 +93,31 @@ pip_packages: []
   # - name: mkdocs
   #   state: present # present/absent/latest, default: present
   #   version: "0.16.3" # default: N/A
-
+  
 # Glob pattern to ansible task files to run after all other tasks are finished.
 post_provision_tasks: []
+
+visual_studio_code_extensions:
+  - extensionName: autoimport
+    publisher: steoates
+  - extensionName: vscode-docker
+    publisher: PeterJausovec
+  - extensionName: csharp
+    publisher: ms-vscode
+  - extensionName: file-icons
+    publisher: file-icons
+  - extensionName: githistory
+    publisher: donjayamanne
+  - extensionName: vscode-auto-open-markdown-preview
+    publisher: hnw
+  - extensionName: docker-explorer
+    publisher: formulahendry
+
+# visual_studio_code_extensions:
+#   - steoates.autoimport
+#   - PeterJausovec.vscode-docker
+#   - ms-vscode.csharp
+#   - file-icons.file-icons
+#   - donjayamanne.githistory
+#   - hnw.vscode-auto-open-markdown-preview 
+#   - formulahendry.docker-explorer

@@ -1,0 +1,9 @@
+---
+- name: "install VS extensions"
+  become: yes
+  become_user: "{{general.user_name}}"
+  command: "code --install-extension '{{ item.publisher }}'.'{{ item.extensionName }}'"
+  with_items:
+    - "{{ visual_studio_code_extensions }}"
+  register: vscode_result
+  changed_when: "'already installed' not in vscode_result.stdout"

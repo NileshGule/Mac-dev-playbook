@@ -26,6 +26,7 @@
     - include: tasks/ansible-setup.yml
 
     - include: tasks/oh-my-zsh-setup.yml
+    - include: tasks/visual-studio-code-extensions-setup.yml
 
     - include: tasks/sudoers.yml
       when: configure_sudoers
