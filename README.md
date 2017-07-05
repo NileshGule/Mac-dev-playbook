@@ -144,8 +144,8 @@ I need IntelliJ as IDE for Java developement. I will figure out the ways to inst
     In the preferences for iTerm2 select the startup command as /bin/zsh --login
     ```
 
-  - The CheetSheet & Spacktacle applications require access to Accesibility settings. These need to be manually configured for time being.
-  
+  - The CheetSheet & Specktacle applications require access to Accesibility settings. These need to be manually configured for time being.
+
 ## Author
 
 [Nilesh Gule](http://nileshgule.blogspot.com/), 2017 (originally inspired by following authors
