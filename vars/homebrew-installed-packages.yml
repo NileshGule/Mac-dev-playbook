@@ -7,6 +7,7 @@ homebrew_installed_packages:
   - docker-compose
   - git
   - gpg
+  - mas
   - node
   - nvm
   - tree

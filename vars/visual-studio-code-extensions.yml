@@ -14,6 +14,8 @@ visual_studio_code_extensions:
     publisher: hnw
   - extensionName: docker-explorer
     publisher: formulahendry
+  - extensionName: ansible-autocomplete
+    publisher: timonwong
 
 # visual_studio_code_extensions:
 #   - steoates.autoimport
