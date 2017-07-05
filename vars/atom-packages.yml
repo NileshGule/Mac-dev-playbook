@@ -1,0 +1,10 @@
+---
+atom_packages_packages:
+  - file-icons
+  - atom-material-ui
+  - atom-material-syntax-dark
+  - atom-cform-yaml
+  - language-yaml-cloudformation
+  - linter
+  - linter-js-yaml
+  - linter-ui-default

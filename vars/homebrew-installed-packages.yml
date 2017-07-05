@@ -1,0 +1,13 @@
+---
+homebrew_installed_packages:
+  # - ansible # Installed via Pip.
+  - autoconf
+  - bash-completion
+  - chromedriver
+  - docker-compose
+  - git
+  - gpg
+  - node
+  - nvm
+  - tree
+  - zsh

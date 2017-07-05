@@ -4,7 +4,10 @@
 
   vars_files:
     - default.config.yml
-
+    - vars/atom-packages.yml
+    - vars/homebrew-cask-apps.yml
+    - vars/homebrew-installed-packages.yml
+  
   pre_tasks:
     - include_vars: "{{ item }}"
       with_fileglob:
@@ -23,6 +26,11 @@
     - role: hnakamur.atom-packages
 
   tasks:
+    - name: include all the variables
+      include_vars: 
+        dir: 'vars'
+        extensions: ['yml']
+
     - include: tasks/ansible-setup.yml
 
     - include: tasks/oh-my-zsh-setup.yml

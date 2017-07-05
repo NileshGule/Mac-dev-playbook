@@ -1,0 +1,14 @@
+---
+homebrew_cask_apps:
+  - atom
+  - docker
+  - dropbox
+  # - fing # Download link keeps getting changed, d'oh!
+  - firefox
+  - google-chrome
+  - github-desktop
+  - iterm2
+  - sublime-text
+  - vagrant
+  - virtualbox
+  - visual-studio-code

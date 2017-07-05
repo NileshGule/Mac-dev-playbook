@@ -22,18 +22,6 @@ dotfiles_files:
   - .vimrc
 
 homebrew_upgrade_all_packages: yes
-homebrew_installed_packages:
-  # - ansible # Installed via Pip.
-  - autoconf
-  - bash-completion
-  - chromedriver
-  - docker-compose
-  - git
-  - gpg
-  - node
-  - nvm
-  - tree
-  - zsh
 
 homebrew_taps:
   - homebrew/core
@@ -41,29 +29,6 @@ homebrew_taps:
   #- homebrew/php
 
 homebrew_cask_appdir: /Applications
-homebrew_cask_apps:
-  - atom
-  - docker
-  - dropbox
-  # - fing # Download link keeps getting changed, d'oh!
-  - firefox
-  - google-chrome
-  - github-desktop
-  - iterm2
-  - sublime-text
-  - vagrant
-  - virtualbox
-  - visual-studio-code
-
-atom_packages_packages:
-  - file-icons
-  - atom-material-ui
-  - atom-material-syntax-dark
-  - atom-cform-yaml
-  - language-yaml-cloudformation
-  - linter
-  - linter-js-yaml
-  - linter-ui-default
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: []
@@ -93,31 +58,6 @@ pip_packages: []
   # - name: mkdocs
   #   state: present # present/absent/latest, default: present
   #   version: "0.16.3" # default: N/A
-  
+
 # Glob pattern to ansible task files to run after all other tasks are finished.
 post_provision_tasks: []
-
-visual_studio_code_extensions:
-  - extensionName: autoimport
-    publisher: steoates
-  - extensionName: vscode-docker
-    publisher: PeterJausovec
-  - extensionName: csharp
-    publisher: ms-vscode
-  - extensionName: file-icons
-    publisher: file-icons
-  - extensionName: githistory
-    publisher: donjayamanne
-  - extensionName: vscode-auto-open-markdown-preview
-    publisher: hnw
-  - extensionName: docker-explorer
-    publisher: formulahendry
-
-# visual_studio_code_extensions:
-#   - steoates.autoimport
-#   - PeterJausovec.vscode-docker
-#   - ms-vscode.csharp
-#   - file-icons.file-icons
-#   - donjayamanne.githistory
-#   - hnw.vscode-auto-open-markdown-preview 
-#   - formulahendry.docker-explorer

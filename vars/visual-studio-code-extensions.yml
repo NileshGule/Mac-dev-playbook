@@ -1,0 +1,25 @@
+---
+visual_studio_code_extensions:
+  - extensionName: autoimport
+    publisher: steoates
+  - extensionName: vscode-docker
+    publisher: PeterJausovec
+  - extensionName: csharp
+    publisher: ms-vscode
+  - extensionName: file-icons
+    publisher: file-icons
+  - extensionName: githistory
+    publisher: donjayamanne
+  - extensionName: vscode-auto-open-markdown-preview
+    publisher: hnw
+  - extensionName: docker-explorer
+    publisher: formulahendry
+
+# visual_studio_code_extensions:
+#   - steoates.autoimport
+#   - PeterJausovec.vscode-docker
+#   - ms-vscode.csharp
+#   - file-icons.file-icons
+#   - donjayamanne.githistory
+#   - hnw.vscode-auto-open-markdown-preview 
+#   - formulahendry.docker-explorer
