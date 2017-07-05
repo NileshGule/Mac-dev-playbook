@@ -1,6 +1,7 @@
 ---
 homebrew_cask_apps:
   - atom
+  - cheatsheet
   - docker
   - dropbox
   # - fing # Download link keeps getting changed, d'oh!
@@ -8,6 +9,7 @@ homebrew_cask_apps:
   - google-chrome
   - github-desktop
   - iterm2
+  # - Spectacle
   - sublime-text
   - vagrant
   - virtualbox

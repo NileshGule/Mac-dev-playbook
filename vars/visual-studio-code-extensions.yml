@@ -6,8 +6,8 @@ visual_studio_code_extensions:
     publisher: PeterJausovec
   - extensionName: csharp
     publisher: ms-vscode
-  - extensionName: file-icons
-    publisher: file-icons
+  # - extensionName: file-icons
+  #   publisher: file-icons
   - extensionName: githistory
     publisher: donjayamanne
   - extensionName: vscode-auto-open-markdown-preview
@@ -16,6 +16,8 @@ visual_studio_code_extensions:
     publisher: formulahendry
   - extensionName: ansible-autocomplete
     publisher: timonwong
+  - extensionName: vscode-icons
+    publisher: robertohuertasm
 
 # visual_studio_code_extensions:
 #   - steoates.autoimport

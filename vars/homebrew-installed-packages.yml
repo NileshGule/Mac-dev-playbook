@@ -12,3 +12,4 @@ homebrew_installed_packages:
   - nvm
   - tree
   - zsh
+  - zsh-completions

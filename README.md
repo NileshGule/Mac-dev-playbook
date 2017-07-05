@@ -63,28 +63,31 @@ Any variable can be overridden in `config.yml`; see the supporting roles' docume
 
 Applications (installed with Homebrew Cask):
   - [Atom](https://atom.io)
+  - [CheetSheet](https://www.mediaatelier.com/CheatSheet/)
   - [Docker](https://www.docker.com/)
   - [Dropbox](https://www.dropbox.com/)
   - [Firefox](https://www.mozilla.org/en-US/firefox/new/)
   - [Github Desktop](https://desktop.github.com)
   - [Google Chrome](https://www.google.com/chrome/)
-  - [Homebrew](http://brew.sh/)
   - [iTerm2](https://www.iterm2.com)
+  - [Spectacle](https://www.spectacleapp.com)
   - [Sublime Text](https://www.sublimetext.com/)
   - [Vagrant](https://www.vagrantup.com/)
   - [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
+  - [Visual Studio Code](https://code.visualstudio.com)
 
 Packages (installed with Homebrew):
 
-  - autoconf
-  - bash-completion
-  - chromedriver
+  - [autoconf](http://brewformulas.org/Autoconf)
+  - [bash-completion](http://brewformulas.org/BashCompletion)
+  - [chromedriver](http://brewformulas.org/Chromedriver)
   - git
   - gpg
-  - node
-  - nvm
-  - tree
+  - [node](http://brewformulas.org/Node)
+  - [nvm](http://brewformulas.org/Nvm)
+  - [tree](http://brewformulas.org/Tree)
   - zsh
+  - zsh-completions
 
 Atom packages and Themes (installed with hnakamu role)
 
@@ -94,18 +97,28 @@ Atom packages and Themes (installed with hnakamu role)
   - [atom-material-ui](https://github.com/atom-material/atom-material-ui)
   - [atom-material-syntax-dark](https://github.com/atom-material/atom-material-syntax-dark)
 
+Visual Studio Code extensions
+  - [autoimport](https://marketplace.visualstudio.com/items?itemName=steoates.autoimport)
+  - [vscode-docker](https://marketplace.visualstudio.com/items?itemName=PeterJausovec.vscode-docker)
+  - [csharp](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp)
+  - [vscode-icons](https://marketplace.visualstudio.com/items?itemName=robertohuertasm.vscode-icons)
+  - [githistory](https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory)
+  - [vscode-auto-open-markdown-preview](https://marketplace.visualstudio.com/items?itemName=hnw.vscode-auto-open-markdown-preview)
+  - [docker-explorer](https://marketplace.visualstudio.com/items?itemName=formulahendry.docker-explorer)
+  - [ansible-autocomplete](https://marketplace.visualstudio.com/items?itemName=timonwong.ansible-autocomplete)
+
 As per the original playbook from geerlingguy, there is an option to configure the dotfiles. I have disabled this option by setting the configure_dotfiles: no flag.
 
 Ansible role [hnakamu](https://github.com/hnakamur/ansible-role-atom-packages) is used for managing Atom packages.
 
 
-I faced problems while setting zsh as the default shell. I have commented the lines in oh-my-zsh-setup.yml file which tries to set the default shell. The original oh-my-zsh setup file had user name passed as a variable. i changed this a bit to use the current user from environment variables.
+I faced problems while setting zsh as the default shell. I have commented the lines in oh-my-zsh-setup.yml file which tries to set the default shell. The original oh-my-zsh setup file had user name passed as a variable. I changed this a bit to use the current user from environment variables.
 
 Finally, there are a few other preferences and settings added on for various apps and services.
 
-## Future additions
-I use Atom & Sublime 3 as preferred text editors. Both these editors support Material Theme. I would like to automate the installation of theme as well as the icons package. For now these are manually installed and configured for Sublime.
+Note that the Spectacle application installs successfully but it requires access to Accessibility settings. Because of this it reports failure. I ran the playbook once to overcome this problem and then comment the line in the config which installs this app. Rerunning the playbook installs all the other packages and tools.
 
+## Future additions
 Next step is to automate the installation of plugins for Sublime.
 
 ### Things that still need to be done manually
@@ -122,7 +135,7 @@ It's my hope that I can get the rest of these things wrapped up into Ansible pla
 
 ### Applications/packages to be added:
 
-In future would like to automate the additional packages for Sublime editors to be automated.
+I need IntelliJ as IDE for Java developement. I will figure out the ways to install IntelliJ and its plugins using Ansible.
 
 ### Configuration to be added:
 
@@ -131,6 +144,11 @@ In future would like to automate the additional packages for Sublime editors to 
     In the preferences for iTerm2 select the startup command as /bin/zsh --login
     ```
 
+  - The CheetSheet & Spacktacle applications require access to Accesibility settings. These need to be manually configured for time being.
+  
 ## Author
 
-[Nilesh Gule](http://nileshgule.blogspot.com/), 2017 (originally inspired by [geerlingguy] (https://github.com/geerlingguy/mac-dev-playbook) and [Raymiiorg] (https://github.com/RaymiiOrg/ansible/blob/master/oh-my-zsh/ohmyzsh.yml)).
+[Nilesh Gule](http://nileshgule.blogspot.com/), 2017 (originally inspired by following authors
+- [geerlingguy](https://github.com/geerlingguy/mac-dev-playbook) 
+- [Raymiiorg](https://github.com/RaymiiOrg/ansible/blob/master/oh-my-zsh/ohmyzsh.yml)
+- [Gantsign Ansible role for VS Code](https://github.com/gantsign/ansible-role-visual-studio-code)
