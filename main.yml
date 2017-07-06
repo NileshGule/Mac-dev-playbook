@@ -13,6 +13,8 @@
       with_fileglob:
         - ../config.yml
       tags: ['always']
+    - debug:
+        var: ansible_local
 
   roles:
     - role: geerlingguy.homebrew
@@ -24,6 +26,14 @@
       when: mas_installed_apps
       tags: ['mas']
     - role: hnakamur.atom-packages
+    # - role: gantsign.intellij-plugins
+    #   users:
+    #     - username: "{{general.user_name}}"
+    #       intellij_plugins_intellij_home: '/Applications/IntelliJ IDEA CE.app/Contents'
+    #       intellij_plugins_intellij_user_dirname: '.IdeaIC2017.1'
+    #       intellij_plugins:
+    #         - CheckStyle-Idea
+    #         - IntelliJ-Key_Promoter
 
   tasks:
     - name: include all the variable files

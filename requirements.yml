@@ -3,3 +3,4 @@
 - name: geerlingguy.homebrew
 - name: geerlingguy.mas
 - name: hnakamur.atom-packages
+# - name: gantsign.intellij-plugins

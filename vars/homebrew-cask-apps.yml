@@ -9,9 +9,11 @@ homebrew_cask_apps:
   - google-chrome
   - github-desktop
   - iterm2
+  - java
   - macpass
   # - Spectacle
   - sublime-text
   - vagrant
   - virtualbox
   - visual-studio-code
+  - intellij-idea-ce

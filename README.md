@@ -70,6 +70,7 @@ Applications (installed with Homebrew Cask):
   - [Github Desktop](https://desktop.github.com)
   - [Google Chrome](https://www.google.com/chrome/)
   - [iTerm2](https://www.iterm2.com)
+  - Java
   - [MacPass](http://mstarke.github.io/MacPass/)
   - [Spectacle](https://www.spectacleapp.com)
   - [Sublime Text](https://www.sublimetext.com/)
