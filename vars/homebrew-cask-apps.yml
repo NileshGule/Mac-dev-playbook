@@ -9,6 +9,7 @@ homebrew_cask_apps:
   - google-chrome
   - github-desktop
   - iterm2
+  - macpass
   # - Spectacle
   - sublime-text
   - vagrant
