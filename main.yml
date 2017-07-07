@@ -7,14 +7,13 @@
     - vars/atom-packages.yml
     - vars/homebrew-cask-apps.yml
     - vars/homebrew-installed-packages.yml
+    - vars/visual-studio-code-extensions.yml
   
   pre_tasks:
     - include_vars: "{{ item }}"
       with_fileglob:
         - ../config.yml
       tags: ['always']
-    - debug:
-        var: ansible_local
 
   roles:
     - role: geerlingguy.homebrew
@@ -26,6 +25,10 @@
       when: mas_installed_apps
       tags: ['mas']
     - role: hnakamur.atom-packages
+    - role: gantsign.visual-studio-code-extensions
+      users:
+        - username: "{{general.user_name}}"
+          visual_studio_code_extensions: "{{visual_studio_code_extensions}}"
     # - role: gantsign.intellij-plugins
     #   users:
     #     - username: "{{general.user_name}}"
@@ -36,7 +39,7 @@
     #         - IntelliJ-Key_Promoter
 
   tasks:
-    - name: include all the variable files
+    - name: include all the YML files from vars directory with variables
       include_vars: 
         dir: 'vars'
         extensions: ['yml']
@@ -44,7 +47,7 @@
     - include: tasks/ansible-setup.yml
 
     - include: tasks/oh-my-zsh-setup.yml
-    - include: tasks/visual-studio-code-extensions-setup.yml
+    # - include: tasks/visual-studio-code-extensions-setup.yml
 
     - include: tasks/sudoers.yml
       when: configure_sudoers

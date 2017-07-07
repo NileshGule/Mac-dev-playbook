@@ -1,5 +1,5 @@
 ---
-- name: "install VS extensions"
+- name: "install VS Code extensions"
   become: yes
   become_user: "{{general.user_name}}"
   command: "code --install-extension '{{ item.publisher }}'.'{{ item.extensionName }}'"
