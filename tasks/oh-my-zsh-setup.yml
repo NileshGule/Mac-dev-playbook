@@ -2,6 +2,12 @@
 - name: Clone oh-my-zsh repo
   git: repo=https://github.com/robbyrussell/oh-my-zsh.git dest="{{general.local_home}}/.oh-my-zsh"
 
+- name: Ensure conf directory exists.
+  file:
+    path: "{{general.local_home}}/conf"
+    state: directory
+  become: yes
+
 - name: deploy .zshrc
   become: yes
   template: src=files/zshrc.in dest="{{general.local_home}}/conf/zshrc" owner="{{general.user_name}}"
