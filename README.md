@@ -1,5 +1,7 @@
 # Mac Development Ansible Playbook
 
+[![Build Status](https://travis-ci.org/NileshGule/Mac-dev-playbook.svg?branch=master)](https://travis-ci.org/NileshGule/Mac-dev-playbook)
+
 This work is inspired by [geerlingguy](https://github.com/geerlingguy/mac-dev-playbook) work on automating the setup for Mac Book. For installing the [oh my zsh](http://ohmyz.sh) package I took inspiration from [RaymiiOrg](https://github.com/RaymiiOrg/ansible/blob/master/oh-my-zsh/ohmyzsh.yml).
 
 This playbook installs and configures most of the software I use on my Mac for software development. I combined the two ansible automated setups and added my own tools like Github Desktop & Tabset. The complete list of softwares are listed below.

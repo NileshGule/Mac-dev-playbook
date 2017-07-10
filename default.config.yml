@@ -31,8 +31,8 @@ homebrew_taps:
 homebrew_cask_appdir: /Applications
 
 # See `geerlingguy.mas` role documentation for usage instructions.
-mas_installed_apps:
-  - { id: 902111700, name: "Blogo" }
+mas_installed_apps: []
+  # - { id: 902111700, name: "Blogo" }
 
 mas_email: ""
 mas_password: ""
