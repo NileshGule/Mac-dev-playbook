@@ -8,6 +8,7 @@ homebrew_installed_packages:
   - git
   - gpg
   - mas
+  - molecule
   - node
   - nvm
   - tree

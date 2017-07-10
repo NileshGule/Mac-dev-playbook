@@ -57,6 +57,9 @@ npm_packages:
   #   state: present # present/absent/latest, default: present
   #   version: "^2.6" # default: N/A
 pip_packages: []
+  # - testinfra
+  # - pytest
+  # - pylint
   # - name: mkdocs
   #   state: present # present/absent/latest, default: present
   #   version: "0.16.3" # default: N/A
