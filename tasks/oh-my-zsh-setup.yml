@@ -12,16 +12,30 @@
 - name: deploy .zshrc
   become: yes
   become_user: "{{general.user_name}}"
-  template: src=files/zshrc.in dest="{{general.local_home}}/conf/zshrc" owner="{{general.user_name}}"
+  template: 
+    src: files/zshrc.in 
+    dest: "{{general.local_home}}/conf/zshrc" 
+    force: no
+    owner: "{{general.user_name}}"
 
 - name: remove standard zshrc
-  file: path="{{general.local_home}}/.zshrc" state=absent
+  file: 
+    path: "{{general.local_home}}/.zshrc" 
+    state: absent
 
 - name: Create conf folder in home directory
-  file: path="{{general.local_home}}/conf/" state=directory owner="{{general.user_name}}"
+  file: 
+    path: "{{general.local_home}}/conf/" 
+    state: directory 
+    owner: "{{general.user_name}}"
 
 - name: symlink zshrc
-  file: path="{{general.local_home}}/.zshrc" src="{{general.local_home}}/conf/zshrc" state=link owner="{{general.user_name}}"
+  file: 
+    path: "{{general.local_home}}/.zshrc" 
+    src: "{{general.local_home}}/conf/zshrc" 
+    state: link
+    force: no
+    owner: "{{general.user_name}}"
 
 #- name: Set zsh as default shell
 #  user: name=nileshgule shell=/bin/zsh

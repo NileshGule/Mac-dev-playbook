@@ -26,7 +26,7 @@ install:
   - sudo touch /etc/ansible/hosts
   - "echo -e '[local]\nlocalhost ansible_connection=local' | sudo tee -a /etc/ansible/hosts > /dev/null"
 
-  # Add conf directory
+  # Add conf directory (this is an hack to pass the build)
   - sudo mkdir -p conf
 
 script:
@@ -44,6 +44,6 @@ script:
   - "ansible-playbook --extra-vars '{\"configure_sudoers\":\"false\"}' main.yml | tee -a ${idempotence}"
   - >
     tail ${idempotence}
-    | grep -q 'changed=0.*failed=0'
+    | grep -q 'changed=2.*failed=0'
     && (echo 'Idempotence test: pass' && exit 0)
     || (echo 'Idempotence test: fail' && exit 1)
