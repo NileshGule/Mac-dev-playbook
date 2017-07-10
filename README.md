@@ -1,6 +1,8 @@
 # Mac Development Ansible Playbook
 
 [![Build Status](https://travis-ci.org/NileshGule/Mac-dev-playbook.svg?branch=master)](https://travis-ci.org/NileshGule/Mac-dev-playbook)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/NileshGule/Mac-dev-playbook/master/LICENSE)
+
 
 This work is inspired by [geerlingguy](https://github.com/geerlingguy/mac-dev-playbook) work on automating the setup for Mac Book. For installing the [oh my zsh](http://ohmyz.sh) package I took inspiration from [RaymiiOrg](https://github.com/RaymiiOrg/ansible/blob/master/oh-my-zsh/ohmyzsh.yml).
 

@@ -40,6 +40,7 @@ script:
   - "travis_wait 30 ansible-playbook --extra-vars '{\"configure_sudoers\":\"false\"}' main.yml"
 
   # Test the playbook's idempotence.
+  # Note that there would be 2 tasks shown as changed due to removal & recreation of the zshrc symlink
   - idempotence=$(mktemp)
   - "ansible-playbook --extra-vars '{\"configure_sudoers\":\"false\"}' main.yml | tee -a ${idempotence}"
   - >
