@@ -26,6 +26,9 @@ install:
   - sudo touch /etc/ansible/hosts
   - "echo -e '[local]\nlocalhost ansible_connection=local' | sudo tee -a /etc/ansible/hosts > /dev/null"
 
+  # Add conf directory
+  - sudo mkdir -p conf
+
 script:
   # Install dependencies.
   - "ansible-galaxy install -r requirements.yml"

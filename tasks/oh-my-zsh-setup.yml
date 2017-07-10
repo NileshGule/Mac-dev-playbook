@@ -7,9 +7,11 @@
     path: "{{general.local_home}}/conf"
     state: directory
   become: yes
+  become_user: "{{general.user_name}}"
 
 - name: deploy .zshrc
   become: yes
+  become_user: "{{general.user_name}}"
   template: src=files/zshrc.in dest="{{general.local_home}}/conf/zshrc" owner="{{general.user_name}}"
 
 - name: remove standard zshrc
