@@ -6,10 +6,6 @@ language: objective-c
 osx_image: xcode8.2
 
 before_install:
-  # Add rvm installation step to avoid build failure 
-  # (see https://github.com/travis-ci/travis-ci/issues/5361)- rvm get stable --auto-dotfiles
-  - rvm install 2.3.0
-
   # Uninstall existing brew installation.
   # Hacking xCode8.2 build by pipelining 'yes' command (see https://askubuntu.com/questions/338857/automatically-enter-input-in-command-line)
   - 'yes | ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall)"'
@@ -17,6 +13,10 @@ before_install:
   - rm -rf /usr/local/Caskroom || true
   - rm -rf /usr/local/bin/brew || true
   
+  # Add rvm installation step to avoid build failure 
+  # (see https://github.com/travis-ci/travis-ci/issues/5361)
+  - rvm get stable --auto-dotfiles
+  - rvm install 2.3.0
   
 
 install:
