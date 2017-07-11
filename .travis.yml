@@ -9,9 +9,9 @@ before_install:
   # Uninstall existing brew installation.
   # Hacking xCode8.2 build by pipelining 'yes' command (see https://askubuntu.com/questions/338857/automatically-enter-input-in-command-line)
   - 'yes | ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall)"'
-  - rm -rf /usr/local/Homebrew
-  - rm -rf /usr/local/Caskroom
-  - rm -rf /usr/local/bin/brew
+  # - rm -rf /usr/local/Homebrew
+  # - rm -rf /usr/local/Caskroom
+  # - rm -rf /usr/local/bin/brew
   # Add rvm installation step to avoid build failure 
   # (see https://github.com/travis-ci/travis-ci/issues/5361)
   - rvm get stable --auto-dotfiles
