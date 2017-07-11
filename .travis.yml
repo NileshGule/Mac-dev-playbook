@@ -2,7 +2,7 @@
 sudo: required
 language: objective-c
 # 10.11 (see https://docs.travis-ci.com/user/osx-ci-environment/#OS-X-Version)
-osx_image: xcode8.1
+osx_image: xcode87.3
 
 before_install:
   # Uninstall existing brew installation.
@@ -10,6 +10,7 @@ before_install:
   - rm -rf /usr/local/Homebrew
   - rm -rf /usr/local/Caskroom
   - rm -rf /usr/local/bin/brew
+  - rvm install 2.3.0
 
 install:
   # Install pip.
