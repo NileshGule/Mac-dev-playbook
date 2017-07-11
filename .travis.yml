@@ -10,6 +10,9 @@ before_install:
   - rm -rf /usr/local/Homebrew
   - rm -rf /usr/local/Caskroom
   - rm -rf /usr/local/bin/brew
+  # Add rvm installation step to avoid build failure 
+  # (see https://github.com/travis-ci/travis-ci/issues/5361)
+  - rvm get stable --auto-dotfiles
   - rvm install 2.3.0
 
 install:
