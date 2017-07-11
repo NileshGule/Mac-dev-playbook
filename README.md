@@ -152,6 +152,8 @@ I need IntelliJ as IDE for Java developement. I will figure out the ways to inst
 
   - The CheetSheet & Specktacle applications require access to Accesibility settings. These need to be manually configured for time being.
 
+## Testing
+The project is [continuously tested using Travis CI's MacOS infrastructure](https://travis-ci.org/NileshGule/Mac-dev-playbook).
 ## Author
 
 [Nilesh Gule](http://nileshgule.blogspot.com/), 2017 (originally inspired by following authors
