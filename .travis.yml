@@ -21,23 +21,22 @@ before_install:
 
 install:
   # Install pip.
-  # - sudo easy_install pip
-  - easy_install pip
+  - sudo easy_install pip
 
   # Install Ansible.
-  - pip install ansible
+  - sudo pip install ansible
 
   # Add ansible.cfg to pick up roles path.
   - "{ echo '[defaults]'; echo 'roles_path = ../'; } >> ansible.cfg"
 
   # Add a hosts file.
-  - mkdir -p /etc/ansible
-  - touch /etc/ansible/hosts
+  - sudo mkdir -p /etc/ansible
+  - sudo touch /etc/ansible/hosts
   - "echo -e '[local]\nlocalhost ansible_connection=local' | sudo tee -a /etc/ansible/hosts > /dev/null"
 
   # Add conf directory (this is an hack to pass the build)
   # OhMyZsh setup looks for conf directory
-  - mkdir -p conf
+  - sudo mkdir -p conf
 
 script:
   # Install dependencies.
