@@ -7,3 +7,22 @@
     - "{{ visual_studio_code_extensions }}"
   register: vscode_result
   changed_when: "'already installed' not in vscode_result.stdout"
+
+# - name: uninstall extensions
+#   become: yes
+#   become_user: "{{general.user_name}}"
+#   command: "code --uninstall-extension '{{ item.publisher }}'.'{{ item.extensionName }}'"
+#   # command: "code --list-extensions"
+#   with_items:
+#     # - "{{ visual_studio_code_extensions }}"
+#     - "{{ uninstall_visual_studio_code_extensions }}"
+#     # - visual_studio_code_extensions
+#   register: vscode_uninstall_result
+#   changed_when: "'uninstalled' in vscode_uninstall_result.stdout"
+
+# - name: disable extensions
+#   become: yes
+#   become_user: "{{general.user_name}}"
+#   command: "code --disable-extensions"
+#   register: vscode_uninstall_result
+#   changed_when: "'Disabled' in vscode_uninstall_result.stdout"

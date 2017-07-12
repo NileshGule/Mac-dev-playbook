@@ -25,6 +25,32 @@ visual_studio_code_extensions:
   - extensionName: one-monokai
     publisher: azemoh
 
+uninstall_visual_studio_code_extensions: []
+  # - extensionName: autoimport
+  #   publisher: steoates
+  # - extensionName: vscode-docker
+  #   publisher: PeterJausovec
+  # - extensionName: csharp
+  #   publisher: ms-vscode
+  # - extensionName: githistory
+  #   publisher: donjayamanne
+  # - extensionName: vscode-auto-open-markdown-preview
+  #   publisher: hnw
+  # - extensionName: docker-explorer
+  #   publisher: formulahendry
+  # - extensionName: ansible-autocomplete
+  #   publisher: timonwong
+  # - extensionName: vscode-icons
+  #   publisher: robertohuertasm
+  # - extensionName: python
+  #   publisher: donjayamanne
+  # - extensionName: vscode-yaml-validation
+  #   publisher: djabraham
+  # - extensionName: vscode-flake8
+  #   publisher: jaysonsantos
+  # - extensionName: one-monokai
+  #   publisher: azemoh
+
 # visual_studio_code_extensions:
 #   - steoates.autoimport
 #   - PeterJausovec.vscode-docker
