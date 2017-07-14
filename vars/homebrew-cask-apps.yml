@@ -1,6 +1,7 @@
 ---
 homebrew_cask_apps:
   - atom
+  - adobe-acrobat-reader
   - cheatsheet
   - docker
   - dropbox
