@@ -44,6 +44,14 @@ plugins=(git cp command-not-found git-extras gnu-utils history pip python screen
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
+
+#set JAVA_HOME (see https://www.mkyong.com/java/how-to-set-java_home-environment-variable-on-mac-os-x/)
+export JAVA_HOME=$(/usr/libexec/java_home)
+
 export PATH=/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+SPARK_HOME=$HOME/Downloads/spark-1.6.3-bin-hadoop2.6/bin
+
+PATH=$PATH:$SPARK_HOME
+export PATH
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting

@@ -67,6 +67,7 @@ Any variable can be overridden in `config.yml`; see the supporting roles' docume
 
 Applications (installed with Homebrew Cask):
   - [Atom](https://atom.io)
+  - [Adobe Acrobat Reader](https://acrobat.adobe.com/sea/en/acrobat/pdf-reader.html)
   - [CheetSheet](https://www.mediaatelier.com/CheatSheet/)
   - [Docker](https://www.docker.com/)
   - [Dropbox](https://www.dropbox.com/)
@@ -74,7 +75,7 @@ Applications (installed with Homebrew Cask):
   - [Github Desktop](https://desktop.github.com)
   - [Google Chrome](https://www.google.com/chrome/)
   - [iTerm2](https://www.iterm2.com)
-  - Java
+  - [Java](https://www.java.com/en/)
   - [MacPass](http://mstarke.github.io/MacPass/)
   - [Spectacle](https://www.spectacleapp.com)
   - [Sublime Text](https://www.sublimetext.com/)
@@ -87,13 +88,16 @@ Packages (installed with Homebrew):
   - [autoconf](http://brewformulas.org/Autoconf)
   - [bash-completion](http://brewformulas.org/BashCompletion)
   - [chromedriver](http://brewformulas.org/Chromedriver)
-  - git
+  - [git](https://git-scm.com)
   - gpg
+  - [mas](https://libraries.io/homebrew/mas)
+  - [maven](https://maven.apache.org)
+  - [molecule](https://molecule.readthedocs.io/en/master/)
   - [node](http://brewformulas.org/Node)
   - [nvm](http://brewformulas.org/Nvm)
   - [tree](http://brewformulas.org/Tree)
-  - zsh
-  - zsh-completions
+  - [zsh](http://zsh.sourceforge.net)
+  - [zsh-completions](https://github.com/zsh-users/zsh-completions)
 
 Atom packages and Themes (installed with hnakamu role)
 
@@ -112,6 +116,10 @@ Visual Studio Code extensions
   - [vscode-auto-open-markdown-preview](https://marketplace.visualstudio.com/items?itemName=hnw.vscode-auto-open-markdown-preview)
   - [docker-explorer](https://marketplace.visualstudio.com/items?itemName=formulahendry.docker-explorer)
   - [ansible-autocomplete](https://marketplace.visualstudio.com/items?itemName=timonwong.ansible-autocomplete)
+  - [python](https://marketplace.visualstudio.com/items?itemName=donjayamanne.python)
+  - [vscode-yaml-validation](https://marketplace.visualstudio.com/items?itemName=djabraham.vscode-yaml-validation)
+  - [vscode-flake8](https://marketplace.visualstudio.com/items?itemName=jaysonsantos.vscode-flake8)
+  - [one-monokai](https://marketplace.visualstudio.com/items?itemName=azemoh.one-monokai)
 
 As per the original playbook from geerlingguy, there is an option to configure the dotfiles. I have disabled this option by setting the configure_dotfiles: no flag.
 
@@ -154,9 +162,10 @@ I need IntelliJ as IDE for Java developement. I will figure out the ways to inst
 
 ## Testing
 The project is [continuously tested using Travis CI's MacOS infrastructure](https://travis-ci.org/NileshGule/Mac-dev-playbook).
+
 ## Author
 
-[Nilesh Gule](http://nileshgule.blogspot.com/), 2017 (originally inspired by following authors
+[Nilesh Gule](http://nileshgule.blogspot.com/), 2017 (originally inspired by following authors)
 - [geerlingguy](https://github.com/geerlingguy/mac-dev-playbook) 
 - [Raymiiorg](https://github.com/RaymiiOrg/ansible/blob/master/oh-my-zsh/ohmyzsh.yml)
 - [Gantsign Ansible role for VS Code](https://github.com/gantsign/ansible-role-visual-studio-code)
