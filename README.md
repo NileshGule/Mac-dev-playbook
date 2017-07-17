@@ -149,7 +149,7 @@ It's my hope that I can get the rest of these things wrapped up into Ansible pla
 
 ### Applications/packages to be added:
 
-I need IntelliJ as IDE for Java developement. I will figure out the ways to install IntelliJ and its plugins using Ansible.
+I was able to install IntelliJ Idea. There is a Ansible role by GantSign for installing plugins for IntelliJ. I am facing some problem getting the role to work properly. For time being I have installed the plugins using IDE. In future will work to fix the issue with role and automate the deployment of plugin as well.
 
 ### Configuration to be added:
 
