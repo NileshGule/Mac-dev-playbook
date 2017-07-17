@@ -25,7 +25,7 @@ visual_studio_code_extensions:
   - extensionName: one-monokai
     publisher: azemoh
 
-uninstall_visual_studio_code_extensions: []
+visual_studio_code_extensions_absent: []
   # - extensionName: autoimport
   #   publisher: steoates
   # - extensionName: vscode-docker

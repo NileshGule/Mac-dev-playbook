@@ -25,10 +25,11 @@
       when: mas_installed_apps
       tags: ['mas']
     - role: hnakamur.atom-packages
-    # - role: gantsign.visual-studio-code-extensions
-    #   users:
-    #     - username: "{{general.user_name}}"
-    #       visual_studio_code_extensions: "{{visual_studio_code_extensions}}"
+    - role: gantsign.visual-studio-code-extensions
+      # users:
+      #   - username: "{{general.user_name}}"
+      #     visual_studio_code_extensions: "{{visual_studio_code_extensions}}"
+      #     visual_studio_code_extensions_absent: "{{visual_studio_code_extensions_absent}}"
     # - role: gantsign.intellij-plugins
     #   users:
     #     - username: "{{general.user_name}}"
