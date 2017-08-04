@@ -60,6 +60,7 @@ pip_packages: []
   # - testinfra
   # - pytest
   # - pylint
+  # - awscli
   # - name: mkdocs
   #   state: present # present/absent/latest, default: present
   #   version: "0.16.3" # default: N/A

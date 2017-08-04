@@ -18,8 +18,6 @@ visual_studio_code_extensions:
     publisher: robertohuertasm
   - extensionName: python
     publisher: donjayamanne
-  - extensionName: vscode-yaml-validation
-    publisher: djabraham
   - extensionName: vscode-flake8
     publisher: jaysonsantos
   - extensionName: one-monokai
