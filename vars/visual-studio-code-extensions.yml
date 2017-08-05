@@ -22,6 +22,8 @@ visual_studio_code_extensions:
     publisher: jaysonsantos
   - extensionName: one-monokai
     publisher: azemoh
+  - extensionName: vscode-wakatime
+    publisher: wakatime
 
 visual_studio_code_extensions_absent: []
   # - extensionName: autoimport
