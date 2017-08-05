@@ -106,6 +106,7 @@ Atom packages and Themes (installed with hnakamu role)
   - [file-icons](https://atom.io/packages/file-icons)
   - [atom-material-ui](https://github.com/atom-material/atom-material-ui)
   - [atom-material-syntax-dark](https://github.com/atom-material/atom-material-syntax-dark)
+  - [wakatime](https://wakatime.com/atom)
 
 Visual Studio Code extensions
   - [autoimport](https://marketplace.visualstudio.com/items?itemName=steoates.autoimport)
@@ -120,6 +121,7 @@ Visual Studio Code extensions
   - [vscode-yaml-validation](https://marketplace.visualstudio.com/items?itemName=djabraham.vscode-yaml-validation)
   - [vscode-flake8](https://marketplace.visualstudio.com/items?itemName=jaysonsantos.vscode-flake8)
   - [one-monokai](https://marketplace.visualstudio.com/items?itemName=azemoh.one-monokai)
+  - [wakatime](https://marketplace.visualstudio.com/items?itemName=WakaTime.WakaTime)
 
 As per the original playbook from geerlingguy, there is an option to configure the dotfiles. I have disabled this option by setting the configure_dotfiles: no flag.
 
