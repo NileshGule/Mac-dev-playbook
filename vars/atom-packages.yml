@@ -8,3 +8,4 @@ atom_packages_packages:
   - linter
   - linter-js-yaml
   - linter-ui-default
+  - wakatime
