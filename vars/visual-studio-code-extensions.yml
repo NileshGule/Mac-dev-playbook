@@ -23,7 +23,19 @@ visual_studio_code_extensions:
   - extensionName: one-monokai
     publisher: azemoh
   - extensionName: vscode-wakatime
-    publisher: wakatime
+    publisher: WakaTime
+  - extensionName: vscode-markdownlint
+    publisher: DavidAnson
+  - extensionName: EditorConfig
+    publisher: EditorConfig
+  - extensionName: gitignore
+    publisher: codezombiech
+  - extensionName: java
+    publisher: redhat
+  - extensionName: code-spell-checker
+    publisher: streetsidesoftware
+  - extensionName: vscode-javac
+    publisher: georgewfraser
 
 visual_studio_code_extensions_absent: []
   # - extensionName: autoimport
