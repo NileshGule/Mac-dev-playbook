@@ -122,6 +122,12 @@ Visual Studio Code extensions
   - [vscode-flake8](https://marketplace.visualstudio.com/items?itemName=jaysonsantos.vscode-flake8)
   - [one-monokai](https://marketplace.visualstudio.com/items?itemName=azemoh.one-monokai)
   - [wakatime](https://marketplace.visualstudio.com/items?itemName=WakaTime.WakaTime)
+  - [MarkdownLint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
+  - [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
+  - [gitignore](https://marketplace.visualstudio.com/items?itemName=codezombiech.gitignore)
+  - [Language support for Java by Redhat](https://marketplace.visualstudio.com/items?itemName=redhat.java)
+  - [code-spell-checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
+  - [Java Language support using Compiler API](https://marketplace.visualstudio.com/items?itemName=georgewfraser.vscode-javac)
 
 As per the original playbook from geerlingguy, there is an option to configure the dotfiles. I have disabled this option by setting the configure_dotfiles: no flag.
 
