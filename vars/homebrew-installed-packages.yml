@@ -12,6 +12,7 @@ homebrew_installed_packages:
   - molecule
   - node
   - nvm
+  - sbt
   - tree
   - zsh
   - zsh-completions
