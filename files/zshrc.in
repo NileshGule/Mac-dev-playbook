@@ -52,6 +52,12 @@ export PATH=/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/bin:/sbin:/bi
 SPARK_HOME=$HOME/Downloads/spark-1.6.3-bin-hadoop2.6/bin
 
 PATH=$PATH:$SPARK_HOME
-export PATH
+export PATH=/usr/local/scala/bin:$PATH
+
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+export PATH=$PATH:/Users/nileshgule/bin
+
+autoload bashcompinit && bashcompinit
+source '/Users/nileshgule/lib/azure-cli/az.completion'
