@@ -4,11 +4,12 @@ homebrew_cask_apps:
   - adobe-acrobat-reader
   - cheatsheet
   - docker
+  - dotnet
   - dropbox
-  # - fing # Download link keeps getting changed, d'oh!
   - firefox
   - google-chrome
-  - github-desktop
+  # - github-desktop
+  - github
   - iterm2
   - java
   - macpass

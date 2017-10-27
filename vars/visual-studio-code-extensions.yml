@@ -1,41 +1,44 @@
 ---
 visual_studio_code_extensions:
+  - extensionName: ansible-autocomplete
+    publisher: timonwong
   - extensionName: autoimport
     publisher: steoates
-  - extensionName: vscode-docker
-    publisher: PeterJausovec
+  - extensionName: code-spell-checker
+    publisher: streetsidesoftware
   - extensionName: csharp
     publisher: ms-vscode
-  # - extensionName: githistory
-  #   publisher: donjayamanne
-  # - extensionName: vscode-auto-open-markdown-preview
-  #   publisher: hnw
-  # - extensionName: docker-explorer
-  #   publisher: formulahendry
-  # - extensionName: ansible-autocomplete
-  #   publisher: timonwong
-  # - extensionName: vscode-icons
-  #   publisher: robertohuertasm
-  # - extensionName: python
-  #   publisher: donjayamanne
-  # - extensionName: vscode-flake8
-  #   publisher: jaysonsantos
-  # - extensionName: one-monokai
-  #   publisher: azemoh
-  # - extensionName: vscode-wakatime
-  #   publisher: WakaTime
-  # - extensionName: vscode-markdownlint
-  #   publisher: DavidAnson
-  # - extensionName: EditorConfig
-  #   publisher: EditorConfig
-  # - extensionName: gitignore
-  #   publisher: codezombiech
-  # - extensionName: java
-  #   publisher: redhat
-  # - extensionName: code-spell-checker
-  #   publisher: streetsidesoftware
-  # - extensionName: vscode-javac
-  #   publisher: georgewfraser
+  - extensionName: vscode-docker
+    publisher: PeterJausovec
+  - extensionName: docker-explorer
+    publisher: formulahendry
+  - extensionName: EditorConfig
+    publisher: EditorConfig
+  - extensionName: githistory
+    publisher: donjayamanne
+  - extensionName: gitignore
+    publisher: codezombiech
+  - extensionName: java
+    publisher: redhat
+  - extensionName: vscode-auto-open-markdown-preview
+    publisher: hnw
+  - extensionName: vscode-icons
+    publisher: robertohuertasm
+  - extensionName: python
+    publisher: donjayamanne
+  - extensionName: vscode-flake8
+    publisher: jaysonsantos
+  - extensionName: one-monokai
+    publisher: azemoh
+  - extensionName: vscode-wakatime
+    publisher: WakaTime
+  - extensionName: vscode-markdownlint
+    publisher: DavidAnson
+  - extensionName: vscode-javac
+    publisher: georgewfraser
+  - extensionName: vscode-yaml-validation
+    publisher: djabraham
+
 
 visual_studio_code_extensions_absent: []
   # - extensionName: autoimport
