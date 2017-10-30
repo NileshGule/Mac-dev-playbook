@@ -36,8 +36,6 @@ visual_studio_code_extensions:
     publisher: DavidAnson
   - extensionName: vscode-javac
     publisher: georgewfraser
-  - extensionName: vscode-yaml-validation
-    publisher: djabraham
 
 
 visual_studio_code_extensions_absent: []
