@@ -50,12 +50,12 @@ script:
 
   # Test the playbook's idempotence.
   # Note that there would be 18 tasks shown as changed
-  - idempotence=$(mktemp)
-  - yes | "ansible-playbook --extra-vars '{\"configure_sudoers\":\"false\"}' main.yml | tee -a ${idempotence}"
-  - >
-    tail ${idempotence}
-    | grep -q 'changed=18.*failed=0'
-    && (echo 'Idempotence test: pass' && exit 0)
-    || (echo 'Idempotence test: fail' && exit 1)
+  # - idempotence=$(mktemp)
+  # - yes | "ansible-playbook --extra-vars '{\"configure_sudoers\":\"false\"}' main.yml | tee -a ${idempotence}"
+  # - >
+  #   tail ${idempotence}
+  #   | grep -q 'changed=18.*failed=0'
+  #   && (echo 'Idempotence test: pass' && exit 0)
+  #   || (echo 'Idempotence test: fail' && exit 1)
 
   #checking for 3 changed notifications due to some wierd thing for wakatime vs code plugin, 2 other chnages are related to zshrc
