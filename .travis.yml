@@ -49,12 +49,12 @@ script:
   - "travis_wait 90 ansible-playbook --extra-vars '{\"configure_sudoers\":\"false\"}' main.yml"
 
   # Test the playbook's idempotence.
-  # Note that there would be 2 tasks shown as changed due to removal & recreation of the zshrc symlink
+  # Note that there would be 18 tasks shown as changed
   - idempotence=$(mktemp)
   - yes | "ansible-playbook --extra-vars '{\"configure_sudoers\":\"false\"}' main.yml | tee -a ${idempotence}"
   - >
     tail ${idempotence}
-    | grep -q 'changed=3.*failed=0'
+    | grep -q 'changed=18.*failed=0'
     && (echo 'Idempotence test: pass' && exit 0)
     || (echo 'Idempotence test: fail' && exit 1)
 
