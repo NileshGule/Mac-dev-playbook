@@ -24,8 +24,6 @@ visual_studio_code_extensions:
     publisher: hnw
   - extensionName: vscode-icons
     publisher: robertohuertasm
-  - extensionName: python
-    publisher: donjayamanne
   - extensionName: vscode-flake8
     publisher: jaysonsantos
   - extensionName: one-monokai
@@ -36,6 +34,8 @@ visual_studio_code_extensions:
     publisher: DavidAnson
   - extensionName: vscode-javac
     publisher: georgewfraser
+  - extensionName: csharpextensions
+    publisher: jchannon
 
 
 visual_studio_code_extensions_absent: []
