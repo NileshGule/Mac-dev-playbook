@@ -8,7 +8,27 @@ export TERM="xterm-256color"
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="avit"
+POWERLEVEL9K_MODE='awesome-patched'
+ZSH_THEME="powerlevel9k/powerlevel9k"
+#ZSH_THEME="agnoster"
+#ZSH_THEME="avit"
+
+# zsh tmux settings
+# ZSH_TMUX_AUTOSTART='true'
+
+## Powerlevel9k Settings
+POWERLEVEL9K_HISTORY_BACKGROUND='green'
+
+POWERLEVEL9K_SHORTEN_STRATEGY="truncate_middle"
+POWERLEVEL9K_SHORTEN_DIR_LENGTH=4
+
+POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+
+POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX=''
+POWERLEVEL9K_MULTILINE_SECOND_PROMPT_PREFIX="%F{red} \Uf1d0 %f %F{yellow}❯ "
+
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status history)
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -39,9 +59,11 @@ DISABLE_AUTO_UPDATE="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git cp command-not-found git-extras gnu-utils history pip python screen ssh-agent docker docker-compose zsh-completions zsh-wakatime)
+# plugins=(git cp command-not-found git-extras gnu-utils history pip python screen ssh-agent docker docker-compose zsh-completions zsh-wakatime taskwarrior tmux tmuxinator zsh-autosuggestions)
+plugins=(git cp command-not-found git-extras gnu-utils history pip python screen ssh-agent docker docker-compose zsh-completions zsh-wakatime taskwarrior zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Customize to your needs...
 
@@ -59,5 +81,6 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 export PATH=$PATH:/Users/nileshgule/bin
 
-autoload bashcompinit && bashcompinit
+# -U compinit && compinit && 
+autoload bashcompinit && bashcompiniti
 source '/Users/nileshgule/lib/azure-cli/az.completion'

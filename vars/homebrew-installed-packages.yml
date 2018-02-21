@@ -14,5 +14,6 @@ homebrew_installed_packages:
   - nvm
   - sbt
   - tree
+  - tmux
   - zsh
   - zsh-completions
