@@ -2,7 +2,8 @@
 ZSH=$HOME/.oh-my-zsh
 
 # For Solarized
-export TERM="xterm-256color"
+#export TERM="xterm-256color"
+export TERM=screen-256color
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -12,9 +13,6 @@ POWERLEVEL9K_MODE='awesome-patched'
 ZSH_THEME="powerlevel9k/powerlevel9k"
 #ZSH_THEME="agnoster"
 #ZSH_THEME="avit"
-
-# zsh tmux settings
-# ZSH_TMUX_AUTOSTART='true'
 
 ## Powerlevel9k Settings
 POWERLEVEL9K_HISTORY_BACKGROUND='green'
@@ -29,6 +27,9 @@ POWERLEVEL9K_MULTILINE_SECOND_PROMPT_PREFIX="%F{red} \Uf1d0 %f %F{yellow}❯ "
 
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status history)
+
+# Default username to hide "user@hostname" info
+DEFAULT_USER="nileshgule"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -59,11 +60,29 @@ DISABLE_AUTO_UPDATE="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-# plugins=(git cp command-not-found git-extras gnu-utils history pip python screen ssh-agent docker docker-compose zsh-completions zsh-wakatime taskwarrior tmux tmuxinator zsh-autosuggestions)
-plugins=(git cp command-not-found git-extras gnu-utils history pip python screen ssh-agent docker docker-compose zsh-completions zsh-wakatime taskwarrior zsh-autosuggestions)
+plugins=(git cp command-not-found git-extras gnu-utils history pip python screen ssh-agent docker docker-compose zsh-completions zsh-wakatime taskwarrior tmux tmuxinator zsh-autosuggestions)
+# plugins=(git cp command-not-found git-extras gnu-utils history pip python screen ssh-agent docker docker-compose zsh-completions zsh-wakatime taskwarrior zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+#Powerline
+if [ -d "$HOME/Library/Python/2.7/bin" ]; then
+    PATH="$HOME/Library/Python/2.7/bin:$PATH"
+fi
+
+repository_root="$HOME/Library/Python/2.7/lib/python/site-packages"
+. $repository_root/powerline/bindings/zsh/powerline.zsh
+
+# User configuration
+# Always work in a tmux session if tmux is installed
+# https://github.com/chrishunt/dot-files/blob/master/.zshrc
+if which tmux 2>&1 >/dev/null; then
+  if [ $TERM != "screen-256color" ] && [  $TERM != "screen" ]; then
+    tmux attach -t hack || tmux new -s hack; exit
+  fi
+fi
 
 # Customize to your needs...
 
