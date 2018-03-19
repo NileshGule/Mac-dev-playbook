@@ -8,14 +8,20 @@ homebrew_cask_apps:
   - dropbox
   - firefox
   - google-chrome
+  - intellij-idea-ce
   # - github-desktop
   - github
   - iterm2
   - java
   - macpass
+  - minikube
+  - powershell
   # - Spectacle
+  - skitch
+  - sql-operations-studio
   - sublime-text
   - vagrant
   - virtualbox
   - visual-studio-code
-  - intellij-idea-ce
+  
+  

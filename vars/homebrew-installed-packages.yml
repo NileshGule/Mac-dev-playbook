@@ -2,11 +2,14 @@
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
   - autoconf
+  - awscli
+  - azure-cli
   - bash-completion
   - chromedriver
   - docker-compose
   - git
   - gpg
+  - kubernetes-cli
   - mas
   - maven
   - molecule
@@ -14,6 +17,9 @@ homebrew_installed_packages:
   - nvm
   - sbt
   - tree
+  - terraform
   - tmux
   - zsh
+  - zsh-autosuggestions
   - zsh-completions
+  - zsh-syntax-highlighting
