@@ -15,6 +15,7 @@ homebrew_cask_apps:
   - java
   - macpass
   - minikube
+  - postman
   - powershell
   # - Spectacle
   - skitch
