@@ -2,9 +2,11 @@
 homebrew_cask_apps:
   - atom
   - adobe-acrobat-reader
+  - avibrazil-rdm
   - cheatsheet
+  - ccleaner
   - docker
-  - dotnet
+  # - dotnet
   - dropbox
   - firefox
   - google-chrome
@@ -24,5 +26,6 @@ homebrew_cask_apps:
   - vagrant
   - virtualbox
   - visual-studio-code
+  - whatsapp
   
   
