@@ -16,6 +16,7 @@ homebrew_installed_packages:
   - node
   - nvm
   - sbt
+  - skaffold
   - tree
   - terraform
   - tmux
