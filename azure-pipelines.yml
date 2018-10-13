@@ -1,0 +1,35 @@
+# Xcode
+# Build, test, and archive an Xcode workspace on macOS.
+# Add steps that install certificates, test, sign, and distribute an app, save build artifacts, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/xcode
+
+pool:
+  vmImage: 'macOS 10.13'
+
+steps:
+- task: Install HomeBrew
+
+- script: |
+    'yes | ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall)"'
+    rm -rf /usr/local/Homebrew || true
+    rm -rf /usr/local/Caskroom || true
+    rm -rf /usr/local/bin/brew || true
+
+    rvm get stable --auto-dotfiles
+    yes | rvm install 2.3.0
+
+    sudo easy_install pip
+    sudo pip install ansible
+    "{ echo '[defaults]'; echo 'roles_path = ../'; } >> ansible.cfg"
+
+    sudo mkdir -p /etc/ansible
+    sudo touch /etc/ansible/hosts
+    "echo -e '[local]\nlocalhost ansible_connection=local' | sudo tee -a /etc/ansible/hosts > /dev/null"
+
+    sudo mkdir -p conf
+
+    ansible-galaxy install -r requirements.yml
+    ansible-playbook main.yml --syntax-check
+    ansible-playbook --extra-vars '{\"configure_sudoers\":\"false\"}' main.yml
+    
+
