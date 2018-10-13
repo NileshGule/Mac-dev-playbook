@@ -12,7 +12,7 @@ steps:
 - script: |
     sudo rm -rf ~/.rvm
     sudo curl -L https://get.rvm.io | bash -s stable
-    sudo source /Users/vsts/.rvm/scripts/rvm
+    source /Users/vsts/.rvm/scripts/rvm
     sudo 'yes | ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall)"'
     sudo rm -rf /usr/local/Homebrew || true
     sudo rm -rf /usr/local/Caskroom || true
