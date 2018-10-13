@@ -7,7 +7,7 @@ pool:
   vmImage: 'macOS 10.13'
 
 steps:
-- task: Install HomeBrew
+
 
 - script: |
     'yes | ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall)"'
