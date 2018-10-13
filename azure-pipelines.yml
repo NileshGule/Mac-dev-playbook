@@ -11,11 +11,11 @@ steps:
 
 - script: |
     'yes | ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall)"'
-    rm -rf /usr/local/Homebrew || true
-    rm -rf /usr/local/Caskroom || true
-    rm -rf /usr/local/bin/brew || true
-    rvm get stable --auto-dotfiles
-    yes | rvm install 2.3.0
+    sudo rm -rf /usr/local/Homebrew || true
+    sudo rm -rf /usr/local/Caskroom || true
+    sudo rm -rf /usr/local/bin/brew || true
+    sudo rvm get stable --auto-dotfiles
+    sudo yes | rvm install 2.3.0
     sudo easy_install pip
     sudo pip install ansible
     "{ echo '[defaults]'; echo 'roles_path = ../'; } >> ansible.cfg"
@@ -23,8 +23,8 @@ steps:
     sudo touch /etc/ansible/hosts
     "echo -e '[local]\nlocalhost ansible_connection=local' | sudo tee -a /etc/ansible/hosts > /dev/null"
     sudo mkdir -p conf
-    ansible-galaxy install -r requirements.yml
-    ansible-playbook main.yml --syntax-check
-    ansible-playbook --extra-vars '{\"configure_sudoers\":\"false\"}' main.yml
+    sudo ansible-galaxy install -r requirements.yml
+    sudo ansible-playbook main.yml --syntax-check
+    sudo ansible-playbook --extra-vars '{\"configure_sudoers\":\"false\"}' main.yml
   displayName : 'Ansible playbook execution'
 
