@@ -13,10 +13,6 @@ steps:
     sudo rm -rf ~/.rvm
     sudo curl -L https://get.rvm.io | bash -s stable
     source /Users/vsts/.rvm/scripts/rvm
-    sudo yes | ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall)"
-    sudo rm -rf /usr/local/Homebrew || true
-    sudo rm -rf /usr/local/Caskroom || true
-    sudo rm -rf /usr/local/bin/brew || true
     sudo rvm get stable --auto-dotfiles
     sudo yes | rvm install 2.3.0
     sudo easy_install pip
