@@ -15,7 +15,10 @@ steps:
     source /Users/vsts/.rvm/scripts/rvm
     sudo rvm get stable --auto-dotfiles
     sudo yes | rvm install 2.3.0
+    "echo installing pip" 
     sudo easy_install pip
+
+    "echo installing ansible"
     sudo pip install ansible
     "{ echo '[defaults]'; echo 'roles_path = ../'; } >> ansible.cfg"
     sudo mkdir -p /etc/ansible
@@ -24,6 +27,8 @@ steps:
     sudo mkdir -p conf
     sudo ansible-galaxy install -r requirements.yml
     sudo ansible-playbook main.yml --syntax-check
+
+    "echo running ansible playbook"
     sudo ansible-playbook --extra-vars '{\"configure_sudoers\":\"false\"}' main.yml
   displayName : 'Ansible playbook execution'
 
