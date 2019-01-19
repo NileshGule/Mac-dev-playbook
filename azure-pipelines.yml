@@ -20,6 +20,8 @@ steps:
     sudo ansible-galaxy install -r requirements.yml
     sudo ansible-playbook main.yml --syntax-check
 
+    export ANSIBLE_INVALID_TASK_ATTRIBUTE_FAILED=False
+    
     "echo running ansible playbook"
     sudo ansible-playbook --extra-vars '{\"configure_sudoers\":\"false\"}' main.yml
   displayName : 'Ansible playbook execution'
