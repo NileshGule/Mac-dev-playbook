@@ -12,16 +12,13 @@ steps:
 - script: |
     "echo installing ansible"
     sudo pip install ansible
-    "{ echo '[defaults]'; echo 'roles_path = ../'; } >> ansible.cfg"
+    "{ echo '[defaults]'; echo 'roles_path = ../'; echo 'invalid_task_attribute_failed=False'; } >> ansible.cfg"
     sudo mkdir -p /etc/ansible
     sudo touch /etc/ansible/hosts
     "echo -e '[local]\nlocalhost ansible_connection=local' | sudo tee -a /etc/ansible/hosts > /dev/null"
     sudo mkdir -p conf
     sudo ansible-galaxy install -r requirements.yml
     sudo ansible-playbook main.yml --syntax-check
-
-    export ANSIBLE_INVALID_TASK_ATTRIBUTE_FAILED=False
-    
     "echo running ansible playbook"
     sudo ansible-playbook --extra-vars '{\"configure_sudoers\":\"false\"}' main.yml
   displayName : 'Ansible playbook execution'
