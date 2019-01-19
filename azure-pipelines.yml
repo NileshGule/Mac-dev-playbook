@@ -10,14 +10,6 @@ steps:
 
 
 - script: |
-    sudo rm -rf ~/.rvm
-    sudo curl -L https://get.rvm.io | bash -s stable
-    source /Users/vsts/.rvm/scripts/rvm
-    sudo rvm get stable --auto-dotfiles
-    sudo yes | rvm install 2.3.0
-    "echo installing pip" 
-    sudo easy_install pip
-
     "echo installing ansible"
     sudo pip install ansible
     "{ echo '[defaults]'; echo 'roles_path = ../'; } >> ansible.cfg"
