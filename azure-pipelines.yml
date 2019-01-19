@@ -10,6 +10,7 @@ steps:
 
 
 - script: |
+    export ANSIBLE_INVALID_TASK_ATTRIBUTE_FAILED=False
     "echo installing ansible"
     sudo pip install ansible
     "{ echo '[defaults]'; echo 'roles_path = ../'; echo 'invalid_task_attribute_failed=false'; } >> ansible.cfg"
