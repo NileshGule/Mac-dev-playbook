@@ -20,7 +20,6 @@ steps:
     sudo mkdir -p conf
     sudo ansible-galaxy install -r requirements.yml
     sudo ansible-playbook main.yml --syntax-check
-    "echo running ansible playbook"
     sudo ansible-playbook --extra-vars '{\"configure_sudoers\":\"false\"}' main.yml
   displayName : 'Ansible playbook execution'
 
