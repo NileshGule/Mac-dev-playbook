@@ -5,7 +5,6 @@ homebrew_installed_packages:
   - awscli
   - azure-cli
   - bash-completion
-  - chromedriver
   - docker-compose
   - git
   - gpg
