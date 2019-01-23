@@ -8,7 +8,8 @@
     - vars/atom-packages.yml
     - vars/homebrew-cask-apps.yml
     - vars/homebrew-installed-packages.yml
-    - vars/visual-studio-code-extensions.yml
+    # - vars/visual-studio-code-extensions.yml
+    #commenting visual studio code extension for fixing Azure DevOps build
   
   pre_tasks:
     - include_vars: "{{ item }}"
@@ -49,7 +50,7 @@
     - include: tasks/ansible-setup.yml
 
     - include: tasks/oh-my-zsh-setup.yml
-    - include: tasks/visual-studio-code-extensions-setup.yml
+    # - include: tasks/visual-studio-code-extensions-setup.yml
 
     - include: tasks/sudoers.yml
       when: configure_sudoers
