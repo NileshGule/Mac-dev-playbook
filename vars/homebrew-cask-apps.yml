@@ -23,10 +23,10 @@ homebrew_cask_apps:
   # - Spectacle
   - skitch
   - sql-operations-studio
-  - telegram
+  - telegram-desktop
   # - sublime-text
   # - vagrant
-  - virtualbox
+  # - virtualbox
   - visual-studio-code
   - whatsapp
   
