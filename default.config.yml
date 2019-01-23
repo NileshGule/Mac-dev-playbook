@@ -7,9 +7,9 @@ general:
 
 
 configure_dotfiles: no
-configure_sudoers: yes
+configure_sudoers: no
 configure_terminal: no
-configure_osx: yes
+configure_osx: no
 
 dotfiles_repo: https://github.com/geerlingguy/dotfiles.git
 dotfiles_repo_accept_hostkey: yes
