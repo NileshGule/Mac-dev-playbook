@@ -1,52 +1,52 @@
 ---
-visual_studio_code_extensions:
-  - extensionName: ansible-autocomplete
-    publisher: timonwong
-  - extensionName: autoimport
-    publisher: steoates
-  - extensionName: code-spell-checker
-    publisher: streetsidesoftware
-  - extensionName: csharp
-    publisher: ms-vscode
-  - extensionName: vscode-docker
-    publisher: PeterJausovec
-  - extensionName: docker-explorer
-    publisher: formulahendry
-  - extensionName: EditorConfig
-    publisher: EditorConfig
-  - extensionName: githistory
-    publisher: donjayamanne
-  - extensionName: gitignore
-    publisher: codezombiech
-  - extensionName: java
-    publisher: redhat
-  - extensionName: vscode-auto-open-markdown-preview
-    publisher: hnw
-  - extensionName: vscode-icons
-    publisher: robertohuertasm
-  - extensionName: vscode-flake8
-    publisher: jaysonsantos
-  - extensionName: one-monokai
-    publisher: azemoh
-  - extensionName: vscode-wakatime
-    publisher: WakaTime
-  - extensionName: vscode-markdownlint
-    publisher: DavidAnson
-  - extensionName: vscode-javac
-    publisher: georgewfraser
-  - extensionName: csharpextensions
-    publisher: jchannon
+# visual_studio_code_extensions:
+  # - extensionName: ansible-autocomplete
+  #   publisher: timonwong
+  # - extensionName: autoimport
+  #   publisher: steoates
+  # - extensionName: code-spell-checker
+  #   publisher: streetsidesoftware
+  # - extensionName: csharp
+  #   publisher: ms-vscode
+  # - extensionName: vscode-docker
+  #   publisher: PeterJausovec
+  # - extensionName: docker-explorer
+  #   publisher: formulahendry
+  # - extensionName: EditorConfig
+  #   publisher: EditorConfig
+  # - extensionName: githistory
+  #   publisher: donjayamanne
+  # - extensionName: gitignore
+  #   publisher: codezombiech
+  # - extensionName: java
+  #   publisher: redhat
+  # - extensionName: vscode-auto-open-markdown-preview
+  #   publisher: hnw
+  # - extensionName: vscode-icons
+  #   publisher: robertohuertasm
+  # - extensionName: vscode-flake8
+  #   publisher: jaysonsantos
+  # - extensionName: one-monokai
+  #   publisher: azemoh
+  # - extensionName: vscode-wakatime
+  #   publisher: WakaTime
+  # - extensionName: vscode-markdownlint
+  #   publisher: DavidAnson
+  # - extensionName: vscode-javac
+  #   publisher: georgewfraser
+  # - extensionName: csharpextensions
+  #   publisher: jchannon
 
 
 visual_studio_code_extensions_absent: []
   # - extensionName: autoimport
   #   publisher: steoates
   
-# visual_studio_code_extensions:
-#   - steoates.autoimport
-#   - PeterJausovec.vscode-docker
-#   - ms-vscode.csharp
-#   - file-icons.file-icons
-#   - donjayamanne.githistory
-#   - hnw.vscode-auto-open-markdown-preview 
-#   - formulahendry.docker-explorer
+visual_studio_code_extensions:
+  - steoates.autoimport
+  - PeterJausovec.vscode-docker
+  - ms-vscode.csharp
+  - file-icons.file-icons
+  - donjayamanne.githistory
+  - hnw.vscode-auto-open-markdown-preview 
+  - formulahendry.docker-explorer

@@ -4,7 +4,7 @@ homebrew_cask_apps:
   - adobe-acrobat-reader
   - avibrazil-rdm
   - cheatsheet
-  - chromedriver
+  - chromedriver  
   - ccleaner
   - docker
   # - dotnet
