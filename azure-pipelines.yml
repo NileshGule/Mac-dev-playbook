@@ -18,8 +18,8 @@ steps:
     sudo touch /etc/ansible/hosts
     # "echo -e '[local]\nlocalhost ansible_connection=local' | sudo tee -a /etc/ansible/hosts > /dev/null"
     sudo mkdir -p conf
-    sudo ansible-galaxy install -r requirements.yml
-    sudo ansible-playbook main.yml --syntax-check
-    sudo ansible-playbook main.yml
+    ansible-galaxy install -r requirements.yml
+    ansible-playbook main.yml --syntax-check
+    ansible-playbook main.yml
   displayName : 'Ansible playbook execution'
 
