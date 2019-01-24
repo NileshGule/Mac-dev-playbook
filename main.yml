@@ -27,7 +27,8 @@
       when: mas_installed_apps
       tags: ['mas']
     - role: hnakamur.atom-packages
-    - role: gantsign.visual-studio-code-extensions
+    # - role: gantsign.visual-studio-code-extensions
+    #commenting the visual studio code extension to pass the Azure DevOps build
       # users:
       #   - username: "{{general.user_name}}"
       #     visual_studio_code_extensions: "{{visual_studio_code_extensions}}"
