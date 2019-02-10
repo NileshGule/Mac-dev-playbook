@@ -1,6 +1,7 @@
 # Mac Development Ansible Playbook
 
-[![Build Status](https://travis-ci.org/NileshGule/Mac-dev-playbook.svg?branch=master)](https://travis-ci.org/NileshGule/Mac-dev-playbook)
+[![Build Status](https://dev.azure.com/nileshgule0211/Mac%20Dev%20playbook/_apis/build/status/NileshGule.Mac-dev-playbook?branchName=master)](https://dev.azure.com/nileshgule0211/Mac%20Dev%20playbook/_build/latest?definitionId=1&branchName=master)
+
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/NileshGule/Mac-dev-playbook/master/LICENSE)
 
 
