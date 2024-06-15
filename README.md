@@ -168,6 +168,10 @@ I was able to install IntelliJ Idea. There is a Ansible role by GantSign for ins
 
   - The CheetSheet & Specktacle applications require access to Accesibility settings. These need to be manually configured for time being.
 
+## Install nerd fonts using Awk
+Use the Awk script to install Nerd fonts which help to improve look and feel for the Terminal when using oh-my-zsh and other terminal utilities in iTerm or Warp terminals
+Awk script[https://gist.github.com/davidteren/898f2dcccd42d9f8680ec69a3a5d350e]
+
 ## Testing
 The project is [continuously tested using Travis CI's MacOS infrastructure](https://travis-ci.org/NileshGule/Mac-dev-playbook).
 
